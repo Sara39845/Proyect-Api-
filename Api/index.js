@@ -23,11 +23,11 @@ const options = {
 // Aplica CORS con las opciones definidas
 app.use(cors(options));
 
-app.get("/", (req, res) => {
+app.get("/Api/index.js", (req, res) => {
   res.send("Hola server");
 });
 
-app.get('/nueva-ruta', (req, res) => {
+app.get('./My-proyect/Api/index.js', (req, res) => {
   res.send('Hola, soy una nueva ruta');
 });
 

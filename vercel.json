@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+      {
+        "source": "/Api/(.*)",
+        "destination": "/Api"
+      }
+    ],
+    "builds": [
+      {
+        "src": "/Api/index.js",
+        "use": "@now/node"
+      }
+    ]
+  }
